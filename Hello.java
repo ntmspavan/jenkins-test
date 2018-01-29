@@ -6,3 +6,4 @@ public class Hello{
 		System.out.println("Hello Running Java program using Jenkins");
 		
 	}
+};
