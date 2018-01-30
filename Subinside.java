@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 class Subinside
 {
-Public static void main (String [] args)
+Public Static void main (String [] args)
   {
   String s1 = "abcde";
   String s2 = "cd";
