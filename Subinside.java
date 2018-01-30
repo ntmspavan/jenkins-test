@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-class Subinside
+public class Subinside
 {
 Public Static void main (String [] args)
   {
