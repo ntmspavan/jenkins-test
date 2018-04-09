@@ -6,7 +6,6 @@ agent any
               steps {
                   echo 'Building..'
                   script{
-                  #def branch = sh echo origin/Jenkins_pipeline | awk -F '/' '{print ${2}}'
                         BNAME=`echo ${BRANCH_NAME} | awk -F '/' '{print $2}'`
                   }
 
