@@ -6,7 +6,7 @@ agent any
               steps {
                   echo 'Building..'
                   script{
-                        BNAME= sh 'echo ${BRANCH_NAME} | awk -F '/' '{print $2}''
+                        def BNAME= sh 'echo ${BRANCH_NAME} | awk -F '/' '{print $2}''
                   }
 
                  echo "$BNAME"
