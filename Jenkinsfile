@@ -6,6 +6,10 @@ agent any
               steps {
                     echo 'Checked out..'
                     echo "${BRANCH_NAME}"
+                    script{
+                        def BNAME= echo ${BRANCH_NAME} | awk -F '/' '{print $2}'
+                        }
+                 echo "$BNAME"
                   
 } }
           stage('Test') {
