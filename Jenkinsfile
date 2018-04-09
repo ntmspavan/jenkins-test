@@ -4,7 +4,8 @@ agent any
       stages {
           stage('Build') {
               steps {
-                    echo 'Checked out.. "${BRANCH_NAME}"'
+                    echo 'Checked out..'
+                    echo "${BRANCH_NAME}"
                   script{
                         def BNAME= echo ${BRANCH_NAME} | awk -F '/' '{print $2}'
                   }
