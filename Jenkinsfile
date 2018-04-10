@@ -7,7 +7,7 @@ agent any
                     echo 'Checked out..'
                     echo "${BRANCH_NAME}"
                     script{
-                        def BNAME = sh( "echo ${BRANCH_NAME} ", returnStdout:true)
+                        def BNAME = sh(script: "echo ${BRANCH_NAME} ", returnStdout:true)
                         }
                     echo "${BNAME}"
                   
