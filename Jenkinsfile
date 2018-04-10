@@ -18,6 +18,7 @@ agent any
                   echo 'Testing..'
                     script{
                           echo "${branch} from Test"
+                    }
               }
           }
           stage('Deploy') {
