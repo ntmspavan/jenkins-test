@@ -1,17 +1,14 @@
 pipeline {
 agent any
-def branch = sh(script: "echo ${BRANCH_NAME} ", returnStdout:true)
+      script{  
+            def branch = sh(script: "echo ${BRANCH_NAME} ", returnStdout:true)
+      }
       stages {
           stage('Build') {
               steps {
                     echo 'Checked out..'
                     echo "${BRANCH_NAME}"
-                    script{
-                        
-                          echo "${branch}"
-                        }
-                    
-                  
+                    echo "${branch}"
 } }
           stage('Test') {
               steps {
