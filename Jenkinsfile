@@ -7,7 +7,7 @@ agent any
                     echo 'Checked out..'
                     echo "${BRANCH_NAME}"
                     script{
-                        def branch = sh(script: "echo ${BRANCH_NAME}|awk -F '/' '{print $2}' ", returnStdout:true)
+                        def branch = sh(script: "echo ${BRANCH_NAME} ", returnStdout:true)
                           echo "${branch}"
                         }
                     
