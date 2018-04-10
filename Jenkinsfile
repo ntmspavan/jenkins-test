@@ -7,7 +7,7 @@ agent any
                     echo 'Checked out..'
                     echo "${BRANCH_NAME}"
                     script{
-                        def BNAME = sh(script: "echo 'Pavan'", returnStdout:true).trim()
+                        def BNAME = sh(script: "${BRANCH_NAME} | awk -F '/' '{print $2}'", returnStdout:true).trim()
                         }
                     echo "${BNAME}"
                   
