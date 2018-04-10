@@ -7,9 +7,9 @@ agent any
                     echo 'Checked out..'
                     echo "${BRANCH_NAME}"
                     script{
-                        def BNAME = sh(script: "echo ${BRANCH_NAME} ", returnStdout:true)
+                        def branch = sh(script: "echo ${BRANCH_NAME} ", returnStdout:true)
                         }
-                    echo "${BNAME}"
+                    echo "${branch}"
                   
 } }
           stage('Test') {
